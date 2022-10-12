@@ -17,5 +17,18 @@ if(cmd[2] == "add") {
     if(cmd[2] === 'read') {
 
         console.log(read());
+}
+
+if (cmd[2] === "delete"){
+
+    const id = cmd[3]
+
+    const oldNote = read()
+
+    const del = require ('./del')
+
+    del(id, oldNote)
+
+    console.log(read())
 
 }
