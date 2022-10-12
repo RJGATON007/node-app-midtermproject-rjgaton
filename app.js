@@ -1,25 +1,21 @@
-const add = require('./add')
 const read = require('./read')
-const write = require('./write')
+const add = require('./add')
 
-const data = progress.argv
+const cmd = process.argv
 
-var note = {}
-
-if(data[2] == 'add') {
-    note = {
-        id: data[3],
-        title: data[4],
-        body: data[5]
+if(cmd[2] == "add") {
+    const note = {
+        "id": cmd[3],
+        "title": cmd[4],
+        "body": cmd[5]
     }
 
-    var oldNote = read()
+    const oldNote = read()
     add(note, oldNote)
 }
 
-    if(data[2] == 'read') {
-        const present = require('./present')
+    if(cmd[2] === 'read') {
 
-    present(read())
+        console.log(read());
 
 }
