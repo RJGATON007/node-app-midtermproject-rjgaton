@@ -1,2 +1,2 @@
 # node-app-midtermproject-rjgaton
-# midterm proj.
+# Robert James Gaton // BSIT 3-4
